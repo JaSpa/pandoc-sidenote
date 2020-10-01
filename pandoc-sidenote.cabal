@@ -1,13 +1,13 @@
 cabal-version: 1.12
 
--- This file has been generated from package.yaml by hpack version 0.31.2.
+-- This file has been generated from package.yaml by hpack version 0.34.2.
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: c6a31ecb31c271c2d06018cbb86b934912434626381e9a61ea909a838aaa6963
+-- hash: 4282922ec3efb10dac7f7c411ee9f637b57fbfacc62d55a26d001dd86bac04b7
 
 name:           pandoc-sidenote
-version:        0.20.0.0
+version:        0.20.0.1
 synopsis:       Convert Pandoc Markdown-style footnotes into sidenotes
 description:    Convert Pandoc Markdown-style footnotes into sidenotes
 category:       CommandLine
@@ -34,7 +34,7 @@ library
   build-depends:
       base >=4.7 && <5
     , mtl
-    , pandoc-types >=1.20
+    , pandoc-types >=1.20 && <1.22
     , text
   exposed-modules:
       Text.Pandoc.SideNote
@@ -51,7 +51,7 @@ executable pandoc-sidenote
       base >=4.7 && <5
     , mtl
     , pandoc-sidenote
-    , pandoc-types >=1.20
+    , pandoc-types >=1.20 && <1.22
     , text
   other-modules:
       Paths_pandoc_sidenote
